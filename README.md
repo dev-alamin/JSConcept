@@ -211,22 +211,17 @@ p.sayHello(); // Hi, I am Alice
 ```
 
 
-11\. **this Keyword**
----------------------
-
-Refers to different things based on how a function is called.
-
-```
-const person = {
-  name: 'John',
-  greet() {
-    console.log('Hi, ' + this.name);
-  }
-};
-
-person.greet(); // Hi, John
-
-```
+11\. **`this`, `call`, `apply`, and `bind`**
+---------------------------------------------
+   - **Explanation**: `this` refers to the context of function invocation. `call`, `apply`, and `bind` are methods to change the context of `this`.
+   - **Example**:
+     ```javascript
+     function greet() {
+         console.log(`Hello, ${this.name}`);
+     }
+     const person = { name: 'Alice' };
+     greet.call(person); // Hello, Alice
+     ```
 
 
 12\. **IIFE (Immediately Invoked Function Expression)**
@@ -259,8 +254,49 @@ console.log(add(2, 3));
 
 ```
 
+14\. **`==` vs `===`**
+---------------------------
+   - **Explanation**: `==` compares values with type coercion, while `===` compares both value and type without coercion.
+   - **Example**:
+     ```javascript
+     0 == '0';   // true
+     0 === '0';  // false
+     ```
 
-14\. **Garbage Collection**
+15\. **Higher-Order Functions**
+---------------------------------
+   - **Explanation**: Functions that take other functions as arguments or return them.
+   - **Example**:
+     ```javascript
+     function add(a, b) {
+         return a + b;
+     }
+     function operate(func, x, y) {
+         return func(x, y);
+     }
+     console.log(operate(add, 5, 3)); // 8
+     ```
+
+
+16\. **Spread and Rest Operators**
+-----------------------------------
+   - **Explanation**: `...` syntax can be used for spreading elements of an array or object, and gathering remaining arguments into an array.
+   - **Example**:
+     ```javascript
+     // Spread
+     const arr = [1, 2, 3];
+     const arr2 = [...arr, 4, 5];
+     console.log(arr2); // [1, 2, 3, 4, 5]
+
+     // Rest
+     function sum(...args) {
+         return args.reduce((a, b) => a + b, 0);
+     }
+     console.log(sum(1, 2, 3)); // 6
+     ```
+
+
+17\. **Garbage Collection**
 ---------------------------
 
 Automatic memory management -- unused variables are cleaned up when unreachable.
@@ -272,7 +308,7 @@ a = null; // 'test' is now eligible for garbage collection
 ```
 
 
-15\. **WeakMap / WeakSet**
+18\. **WeakMap / WeakSet**
 --------------------------
 
 Collections that hold "weak" references. Keys must be objects.
