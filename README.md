@@ -1,9 +1,7 @@
 # Advanced JavaScript Concepts (Quick Guide)
-==========================================
 
 A concise guide to important advanced JavaScript concepts with short explanations and code examples.
 
-* * * * *
 
 1\. **Event Loop**
 ------------------
@@ -25,7 +23,6 @@ console.log('End');
 
 ```
 
-* * * * *
 
 2\. **Call Stack**
 ------------------
@@ -46,7 +43,6 @@ first();
 
 ```
 
-* * * * *
 
 3\. **Event Delegation**
 ------------------------
@@ -70,7 +66,6 @@ document.getElementById('parent').addEventListener('click', (e) => {
 
 ```
 
-* * * * *
 
 4\. **Closures**
 ----------------
@@ -92,7 +87,6 @@ counter(); // 2
 
 ```
 
-* * * * *
 
 5\. **Hoisting**
 ----------------
@@ -114,7 +108,6 @@ function hoisted() {
 
 ```
 
-* * * * *
 
 6\. **Promises**
 ----------------
@@ -130,7 +123,6 @@ myPromise.then(console.log); // Done!
 
 ```
 
-* * * * *
 
 7\. **Async/Await**
 -------------------
@@ -146,7 +138,6 @@ async function fetchData() {
 
 ```
 
-* * * * *
 
 8\. **Debounce & Throttle**
 ---------------------------
@@ -182,7 +173,6 @@ function throttle(fn, limit) {
 
 ```
 
-* * * * *
 
 9\. **Currying**
 ----------------
@@ -200,7 +190,6 @@ console.log(add(2)(3)); // 5
 
 ```
 
-* * * * *
 
 10\. **Prototype & Prototypal Inheritance**
 -------------------------------------------
@@ -221,7 +210,6 @@ p.sayHello(); // Hi, I am Alice
 
 ```
 
-* * * * *
 
 11\. **this Keyword**
 ---------------------
@@ -240,7 +228,6 @@ person.greet(); // Hi, John
 
 ```
 
-* * * * *
 
 12\. **IIFE (Immediately Invoked Function Expression)**
 -------------------------------------------------------
@@ -254,7 +241,6 @@ Runs as soon as it's defined.
 
 ```
 
-* * * * *
 
 13\. **Modules (ES6)**
 ----------------------
@@ -273,7 +259,6 @@ console.log(add(2, 3));
 
 ```
 
-* * * * *
 
 14\. **Garbage Collection**
 ---------------------------
@@ -286,7 +271,6 @@ a = null; // 'test' is now eligible for garbage collection
 
 ```
 
-* * * * *
 
 15\. **WeakMap / WeakSet**
 --------------------------
